@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.StackLayoutPage"
+             Title="StackLayoutPage"
+              BackgroundColor="#6200EE">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="30">
+            <!-- Título Nuevo -->
+            <Label Text="StackLayout" 
+                   FontSize="Title" 
+                   TextColor="White" 
+                   HorizontalOptions="Center" 
+                   Margin="0,20,0,0"/>
+
+            <!-- Frame con la imagen -->
+            <Frame CornerRadius="10" Padding="10" HorizontalOptions="Center" BackgroundColor="White">
+                <VerticalStackLayout>
+                    <Image Source="dotnet_bot.png" WidthRequest="100" HeightRequest="100" Aspect="AspectFill"/>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Descripción del StackLayout -->
+            <Label Text="StackLayout organiza las vistas en una sola linea,ya sea horizontal o verticalmente, apilandolas una tras otra."
+                   HorizontalOptions="Center" 
+                   HorizontalTextAlignment="Center"
+                   TextColor="White"/>
+
+            <!-- Botones de acción estilizados -->
+            <HorizontalStackLayout>
+                <Button Text="Follow" BackgroundColor="#BB86FC" TextColor="White" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Contact" BackgroundColor="#BB86FC" TextColor="White" HorizontalOptions="FillAndExpand"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.FlexLayoutPage"
+             Title="FlexLayoutPage"
+             BackgroundColor="Yellow">
+    <ScrollView>
+        <FlexLayout Direction="Row" 
+                    Wrap="Wrap" 
+                    JustifyContent="SpaceBetween" 
+                    AlignItems="Start" 
+                    AlignContent="Start"
+                    Padding="10">
+            <!-- Tarjeta de Imagen 1 con título visible -->
+            <Frame CornerRadius="10" Margin="10" BackgroundColor="Black" Padding="10">
+                <StackLayout>
+                    <Image Source="luigi.png" Aspect="AspectFit" HeightRequest="120"/>
+                    <Label Text="Luigi" FontSize="Medium" TextColor="White" HorizontalOptions="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <!-- Tarjeta de Imagen 2 con título visible -->
+            <Frame CornerRadius="10" Margin="10" BackgroundColor="Black" Padding="10">
+                <StackLayout>
+                    <Image Source="yoshi.png" Aspect="AspectFit" HeightRequest="120"/>
+                    <Label Text="Yoshi" FontSize="Medium" TextColor="White" HorizontalOptions="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <!-- Tarjeta de Imagen 3 con título visible -->
+            <Frame CornerRadius="10" Margin="10" BackgroundColor="Black" Padding="10">
+                <StackLayout>
+                    <Image Source="mario.png" Aspect="AspectFit" HeightRequest="120"/>
+                    <Label Text="Mario" FontSize="Medium" TextColor="White" HorizontalOptions="Center"/>
+                </StackLayout>
+            </Frame>
+        </FlexLayout>
+    </ScrollView>
+</ContentPage>

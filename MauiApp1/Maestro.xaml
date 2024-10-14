@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Maestro"
+             Title="Maestro">
+    <VerticalStackLayout>
+        <Image Source="dotnet_bot.png"
+               HeightRequest="200"/>
+
+        <!-- Nombres de botones actualizados -->
+        <Button Text="StackLayout"
+                Clicked="GoToStackLayoutPage"
+                Margin="20,10"/>
+
+        <Button Text="GridLayout"
+                Clicked="GoToGridLayoutPage"
+                Margin="20,10"/>
+
+        <Button Text="FlexLayout"
+                Clicked="GoToFlexLayoutPage"
+                Margin="20,10"/>
+    </VerticalStackLayout>
+</ContentPage>
